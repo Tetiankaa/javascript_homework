@@ -51,5 +51,5 @@ console.log(typeof c, c);
 
 console.log(prompt("Please enter your name"));
 console.log(prompt("Please enter your last name"));
-console.log(prompt("Please enter your date of birth"))
+console.log(+prompt("Please enter your date of birth"))
 
