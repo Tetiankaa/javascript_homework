@@ -172,24 +172,46 @@ switch (weekDay){
 //- Користувач вводить або має два числа.
 // Потрібно знайти та вивести максимальне число з тих двох .
 // Також потрібно врахувати коли введені рівні числа.
-let firstNumber = +prompt("enter a first number");
-let secondNumber= +prompt("enter a second number");
-
-if (firstNumber>secondNumber){
-   alert("First number is higher")
-}else if (secondNumber>firstNumber) {
-    alert("Second number is higher")
-}else if (firstNumber===secondNumber){
-    alert("Numbers are equal")
-}else {
-    alert("Only numbers accepted")
-}
+// let firstNumber = +prompt("enter a first number");
+// let secondNumber= +prompt("enter a second number");
+//
+// if (firstNumber>secondNumber){
+//    alert("First number is higher")
+// }else if (secondNumber>firstNumber) {
+//     alert("Second number is higher")
+// }else if (firstNumber===secondNumber){
+//     alert("Numbers are equal")
+// }else {
+//     alert("Only numbers accepted")
+// }
 
 //- є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 // за допомоги  оператора || буде присвоювати змінній х значення "default"  якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
-let x1 = prompt("enter something") || "default";
-console.log(x1)
+// let x1 = prompt("enter something") || "default";
+// console.log(x1)
+
+let x2="";
+if (x2===NaN ||x2===null ||x2===""||x2===undefined|| x2===0 || x2===false){
+    console.log("default")
+}else {
+    console.log(x2)
+}
+// if (!x2){
+//     console.log("default")
+// }else if  (x2===NaN){
+//     console.log("default")
+// }else if (x2===null){
+//     console.log("default")
+// }else if (x2===""){
+//     console.log("default")
+// }else if (x2===undefined){
+//     console.log("default")
+// }else if (x2===0){
+//     console.log("default")
+// }else {
+//     console.log(x2)
+// }
 
 // - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray. За допомоги іф перевірити кожен його елемент на тривалість навчання. У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
