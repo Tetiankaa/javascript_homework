@@ -42,23 +42,23 @@ printUsers(users);
 
 //- створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
-function createParagraph() {
-    document.write(`<p>${Array.from(arguments)}</p>`)
+function createParagraph(text) {
+    document.write(`<p>${text}</p>`)
 }
 
 createParagraph("This is paragraph");
 
 //- створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-function createListOfItems() {
+function createListOfItems(item) {
     document.write(`<ul>`)
-    document.write(`<li>${Array.from(arguments)}</li>`)
-    document.write(`<li>${Array.from(arguments)}</li>`)
-    document.write(`<li>${Array.from(arguments)}</li>`)
+    document.write(`<li>${item}</li>`)
+    document.write(`<li>${item}</li>`)
+    document.write(`<li>${item}</li>`)
     document.write(`</ul>`)
 }
 
-createListOfItems("item");
+createListOfItems("This is list item");
 
 //- створити функцію яка створює ul з трьома елементами li.
 // Текст li задати через аргумент всім однаковий. Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
