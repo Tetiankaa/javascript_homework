@@ -155,7 +155,8 @@ function exchange(sumUAH,currencyValues,exchangeCurrency){
         if (exchangeCurrency === item.currency){
             return sumUAH/item.value;
         }
-    }
+    }  
+    return console.error("Type USD or EUR")
     }
 console.log(exchange(10000,currencyValues,"USD"));
 
