@@ -127,7 +127,7 @@ let deck = [
     {cardSuit: 'Diamonds', value: 'Ace', color: 'Red'}
 ];
 //  - знайти піковий туз(spade ace)
-let findSpadeAce = deck.filter(element => element.cardSuit === 'Spade' && element.value === 'Ace');
+let findSpadeAce = deck.find(element => element.cardSuit === 'Spade' && element.value === 'Ace');
 console.log(findSpadeAce);
 //  - всі шістки
 let findAllSix = deck.filter(element => element.value === 6);
