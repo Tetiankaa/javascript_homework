@@ -99,7 +99,7 @@ car1.drive();
 car1.info();
 car1.increaseMaxSpeed(50);
 car1.changeYear(2023);
-car1.addDriver("Tetiana Korsun");
+car1.addDriver({name:"Tetiana Korsun",licence:true});
 console.log(car1);
 
 //- (Те саме, тільки через клас)
@@ -137,15 +137,18 @@ class Car2 {
 
     addDriver(...drivers) {
         this.driverName = drivers;
-    }
+    };
 }
-
+function Driver (name,licence){
+    this.name=name;
+    this.licence=licence;
+}
 let car2 = new Car2("Corolla", "Toyota", 2021, 140, 50);
 car2.drive();
 car2.info();
 car2.increaseMaxSpeed(20);
 car2.changeYear(2020);
-car2.addDriver("First driver", "Second driver");
+car2.addDriver({name:"First driver",licence:true},{name: "Second driver",licence:true});
 
 console.log(car2);
 
