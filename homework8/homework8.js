@@ -36,7 +36,7 @@ console.log(sortIdByGrowth);
 //- створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
 // створити пустий масив, наповнити його 10 об'єктами Client
 
-class Client extends User {
+class  Client extends User {
     constructor(id, name, surname, email, phone, ...order) {
         super(id, name, surname, email, phone)
         this.order = order;
@@ -51,7 +51,7 @@ let client5 = new Client(12, "Ruslan", "Bondar", "bondar@gmail.com", +3806314789
 let client6 = new Client(10, "Vasyl", "Chomych", "vasyyyl@gmail.com", +380935511239, "eggs", "water", "ham", "bacon");
 let client7 = new Client(7, "Valeriya", "Kryvych", "vallerii@gmail.com", +380991589123, "milk", "kefir", "shrimp", "spaghetti", "oysters");
 let client8 = new Client(19, "Natasha", "Morozova", "natali@gmail.com", +380731155963, "salama", "cheese", "banana", "apples", "juice", "water");
-let client9 = new Client(2, "Vlad", "Gubskii", "vladgub@gmail.com", +380751485963, "strawberry", "melon", "cherry", "orange", "pear");
+let client9 = new Client(2, "Vlad",  "Gubskii", "vladgub@gmail.com", +380751485963, "strawberry", "melon", "cherry", "orange", "pear");
 let client10 = new Client(18, "Yevhen", "Danilov", "yevhenii@gmail.com", +380632369741, "kiwi");
 
 let clients = [];
@@ -148,7 +148,7 @@ car2.drive();
 car2.info();
 car2.increaseMaxSpeed(20);
 car2.changeYear(2020);
-car2.addDriver({name:"First driver",licence:true},{name: "Second driver",licence:true});
+car2.addDriver(new Driver("First driver",true),new Driver("Second driver",true));
 
 console.log(car2);
 
